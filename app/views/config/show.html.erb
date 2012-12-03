@@ -1,0 +1,7 @@
+<h1>Configuraciones del API</h1>
+<% if flash[:notice] %>
+	<p><%= flash[:notice] %></p>
+<% end %>
+<p>Email:</p>
+<p><%= @app.email %></p>
+<p><%= link_to "Inicio Configuración", config_index_path %></p>

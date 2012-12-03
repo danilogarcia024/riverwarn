@@ -1,0 +1,8 @@
+<h1>Crear Alerta</h1>
+<%= form_for @alert do |f| %>
+	<p><%= f.label :river_level, "Nivel del Río: "%></p>
+	<p><%= f.text_field :river_level %></p>
+	<p><%= f.label :description, "Descripción de la Alerta: "%></p>
+	<p><%= f.text_area :description %></p>
+	<p><%= f.submit "Registrar Alerta" %></p>
+<% end %>

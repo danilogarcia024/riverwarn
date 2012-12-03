@@ -1,0 +1,11 @@
+<h1>Realizar las Configuraciones</h1>
+<%= form_tag action: 'create' do %>
+	<%= fields_for @app do |a_f| %>
+		<% @app.errors[:email].each do |e| %>
+			<p><%= e %></p>
+		<% end %>
+		<%= a_f.label :email, "Email" %>
+		<%= a_f.text_field :email %>
+	<% end %>
+	<%= submit_tag "Actualizar" %>
+<% end%>

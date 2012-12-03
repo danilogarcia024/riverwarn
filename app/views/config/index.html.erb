@@ -1,0 +1,8 @@
+<h1>Configuraciones de la API</h1>
+<h2>Email:</h2>
+<% if @app %>
+	<p><%= @app.email%></p>
+<% else %>
+	<p>No hay Email configurado</p>
+<% end %>
+<p><%= link_to "Realizar Configuración", new_config_path %></p>

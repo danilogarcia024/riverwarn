@@ -1,0 +1,11 @@
+default: &default
+ email: danilogarcia024@gmail.com
+
+development:
+ <<: *default
+
+test:
+ <<: *default
+
+production:
+ <<: *default

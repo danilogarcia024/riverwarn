@@ -1,0 +1,6 @@
+<h1>River Warn Alert</h1>
+<h2>Alertas</h2>
+<% @alerts.each do |a| %>
+	<p><%= link_to(a.id , alert_path(a)) %></p>
+<% end %>
+<p><%= link_to "Indice del Controlador de Alertas", alerts_path%></p>
