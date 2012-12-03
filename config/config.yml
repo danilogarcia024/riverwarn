@@ -1,5 +1,5 @@
 default: &default
- email: danilogarcia024@gmail.com
+ email: riverwarnapp@gmail.com
 
 development:
  <<: *default
